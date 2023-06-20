@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>Kenzyy Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/7d130b4a72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        </nav>
+    </div>
+</div>
+<!-----------------------------------slider---------------------->
+<div class="slider">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        
+        <div class="slide first">
+            <img src="primary/355037982_200472246295019_31939592281961298_n.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="primary/355567662_3487639211472654_2516502876809019504_n.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="primary/355569218_1239452016939841_6679095631517788949_n.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="primary/355699310_928303224945824_7803626839914772484_n.jpg" alt="">
+        </div>
+        
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+</div>
+<div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <a href="index.html"><img src="images/logo.png"></a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023- KENZY online portfolio</p>
+        </div>
+</div>
+     
+<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+
+<script type="text/javascript">
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 2){
+        counter = 1;
+    }
+}, 5000)
+</script>
+    
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>  
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>Kenzyy Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d130b4a72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>BSCS Student</p>
+            <h1>Hi, I'm <span>Kent Louie Lamoro</span><br>from Quezon City Philippines</h1>
+        </div>
+    </div>
+</div>
+<!----------about--------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Kent! I'm passionate about singing, gaming, watching anime and programming. I love to express myself through music and I'm always looking for new ways to do so. I also enjoy playing video games and watching anime as a way to relax and have some fun. Programming is something that I have grown to love over the years and it's become a great hobby of mine. My ultimate goal is to combine all of my passions in order to create something meaningful and unique.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Communication</span><br>Good st communicating and good listener</li>
+                        <li><span>Capability</span><br>Capable and great at using time effectively</li>
+                        <li><span>Rush</span><br>Ability to work under pressure</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Current</span><br>Guesting and singer</li>
+                        <li><span>11-27-18</span><br>Work Immersion</li>
+                        <li><span>11-29-18</span><br>On the Job Training (OJT)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Primary</span><br>Sto. Nino Parochial School 2013-2017</li>
+                        <li><span>Secondary</span><br>Sto. Nino Parochial School 2017-2019</li>
+                        <li><span>Tertiary</span><br>Colegio De San Lorenzo 2020-2021</li>
+                        <li><span>Currently Transfered at</span><br>STI College Munoz-Edsa 2022-2023</li>
+                        <li><span>Course</span><br>Bachelor of Science in Computer Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------education---------------------->
+<div class="education">
+    <div class="container">
+        <h1 class="sub-title">My Education</h1>
+        <div class="education-list">
+            <div>
+                <i class="fa-solid fa-1 fa-bounce"></i>
+                <h2>Sto. Nino Parochial School Elementary</h2>
+                <p>This is the school were it all started for me there are alot of memories and lot of friends that I made when I was in this school.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-2 fa-bounce"></i>
+                <h2>Sto. Nino Parochial School high school-senior high</h2>
+                <p>I continued my high school and senio high school in the same school so that I could experience more moments and build myself so that I can be prepared to go out of my comfort zone.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-3 fa-bounce"></i>
+                <h2>Colegio De San Lorenzo</h2>
+                <p>I decided to enter this school because of my friends that encourage me to it so that we can still be together.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------portfolio---------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Tutorial website for Mobile Legends</h3>
+                    <p>This website purpose is for tutorial and for beginners in the mobile game Mobile Legends.</p>
+                    <a href="tw/casestudymain.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+        </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Gaming Profile Website</h3>
+                    <p>This website shows my profile or accounts in the games that I've been playing everytime.</p>
+                    <a href="gpw/pinakamainn.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+        </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Ecommerce website</h3>
+                    <p>This website is a E-commerce that is exclusively for STI ant not yet finished and still work in progress.</p>
+                    <a href="ecommerce/index.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>0228louie@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>09462299104</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kennethlouise.tilan/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com/kntlmro?t=uca3z4RMfYV0NelvwqB3pg&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://instagram.com/kntlmro?igshid=ZDc4ODBmNjlmNQ="><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@sorryimbad_028"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <a href="images/resume.jpg" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!------ footer -------> 
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <a href="#header"><img src="images/logo.png"></a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023- KENZY online portfolio</p>
+        </div>
+    </div>
+<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>  
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+    
+    
+</body>
+</html>
